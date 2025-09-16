@@ -68,7 +68,7 @@ class Laptop extends Equipo {
 
     @Override
     public String mostrarInfo() {
-        return "Fabricante: " + getFabricante() + "\n" +
+        return "Fabricante :: " + getFabricante() + "\n" +
                "Modelo: " + getModelo() + "\n" +
                "Microprocesador: " + getMicroprocesador() + "\n" +
                "Memoria: " + memoria + "\n" +
@@ -89,7 +89,7 @@ class Tablet extends Equipo {
                   String memoriaNAND, String sistemaOperativo) {
         super(fabricante, modelo, microprocesador);
         this.tamanoPantalla = tamanoPantalla;
-        this.tipoPantalla = tipoPantalla;
+        this.tipoPantalla = tipoPantalla ;
         this.memoriaNAND = memoriaNAND;
         this.sistemaOperativo = sistemaOperativo;
     }
