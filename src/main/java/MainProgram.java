@@ -9,12 +9,6 @@ public class MainProgram extends javax.swing.JFrame {
         private static ArrayList<Desktop> desktops = new ArrayList<>();
     private static ArrayList<Laptop> laptops = new ArrayList<>();
     private static ArrayList<Tablet> tablets = new ArrayList<>();
-
-    // Componentes de la interfaz
-    private JButton registrarButton;
-    private JButton verButton;
-    private JButton salirButton;
-    private JPanel mainPanel;
     
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainProgram.class.getName());
