@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 
 
 public class MainProgram extends javax.swing.JFrame {
-        private static ArrayList<Desktop> desktops = new ArrayList<>();
+    private static ArrayList<Desktop> desktops = new ArrayList<>();
     private static ArrayList<Laptop> laptops = new ArrayList<>();
     private static ArrayList<Tablet> tablets = new ArrayList<>();
     
@@ -15,7 +15,6 @@ public class MainProgram extends javax.swing.JFrame {
     public MainProgram() {
         initComponents();
     }
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -154,7 +153,6 @@ public class MainProgram extends javax.swing.JFrame {
                 break;
         }
     }
-
     private static String validarEntrada(String mensaje) {
         String entrada;
         do {
@@ -166,7 +164,6 @@ public class MainProgram extends javax.swing.JFrame {
         } while (entrada.trim().isEmpty());
         return entrada.trim();
     }
-
     private static void registrarDesktop() {
         String fabricante = validarEntrada("Fabricante del Desktop:");
         if (fabricante == null) return;
@@ -188,7 +185,6 @@ public class MainProgram extends javax.swing.JFrame {
         desktops.add(desktop);
         JOptionPane.showMessageDialog(null, "Desktop registrado exitosamente.");
     }
-
     private static void registrarLaptop() {
         String fabricante = validarEntrada("Fabricante del Laptop:");
         if (fabricante == null) return;
@@ -208,7 +204,6 @@ public class MainProgram extends javax.swing.JFrame {
         laptops.add(laptop);
         JOptionPane.showMessageDialog(null, "Laptop registrado exitosamente.");
     }
-
     private static void registrarTablet() {
         String fabricante = validarEntrada("Fabricante del Tablet:");
         if (fabricante == null) return;
